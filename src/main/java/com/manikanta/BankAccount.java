@@ -1,3 +1,5 @@
+package com.manikanta;
+
 public class BankAccount
 {
     private double balance;

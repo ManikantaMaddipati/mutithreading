@@ -1,3 +1,5 @@
+package com.manikanta;
+
 public class MyFirstThread
 {
     public static void main(String[] args) {
