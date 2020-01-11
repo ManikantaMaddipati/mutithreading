@@ -13,22 +13,22 @@ public class MyFirstThread
 }
 
 class MythreadMoney1 extends Thread{
-    BankAccount bankAccount;
+    BankAccount bankAccount1;
     MythreadMoney1(BankAccount bankAccount){
-        this.bankAccount=bankAccount;
+        this.bankAccount1=bankAccount;
     }
     public void run(){
-        bankAccount.deposit(100);
+        bankAccount1.deposit(100);
     }
 }
 
 class MythreadMoney2 extends Thread{
-    BankAccount bankAccount;
+    BankAccount bankAccount2;
     MythreadMoney2(BankAccount bankAccount){
-        this.bankAccount=bankAccount;
+        this.bankAccount2=bankAccount;
     }
     public void run(){
-        bankAccount.withdrawal(100);
+        bankAccount2.withdrawal(100);
     }
 }
 
