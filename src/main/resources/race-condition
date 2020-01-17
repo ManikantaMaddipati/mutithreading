@@ -1,1 +1,3 @@
 Creating Race conditions : Unpredictability. [2 or more threads give same result].
+Solution is synchronizes [Locking on method level].
+
