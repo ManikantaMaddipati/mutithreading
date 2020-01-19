@@ -10,6 +10,7 @@ public class BankAccount
 
     public void deposit(double amount){
         System.out.println("Before deposit "+ balance);
+
         synchronized (monitor) {
             balance = balance + amount;
         }
