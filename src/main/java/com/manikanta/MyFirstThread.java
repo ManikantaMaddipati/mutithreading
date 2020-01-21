@@ -20,16 +20,19 @@ class MythreadMoney1 extends Thread{
         this.bankAccount1=bankAccount;
     }
     public void run(){
-        bankAccount1.deposit(100);
+
+       bankAccount1.deposit(100);
     }
 }
 
 class MythreadMoney2 extends Thread{
     BankAccount bankAccount2;
     MythreadMoney2(BankAccount bankAccount){
+
         this.bankAccount2=bankAccount;
     }
     public void run(){
+
         bankAccount2.withdrawal(100);
     }
 }
