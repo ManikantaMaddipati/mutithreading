@@ -1,6 +1,9 @@
 package com.manikanta;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class LinkList {
+    private static final Logger logger = LoggerFactory.getLogger(LinkList.class);
     LinkedListNode head;
     public void append(int data){
         if(head == null){
@@ -42,10 +45,10 @@ public class LinkList {
         LinkedListNode  currnet = head;
 
         while (currnet.right!=null){
-            System.out.println(currnet.data);
+            logger.info("data is {}",currnet.data);
             currnet=currnet.right;
         }
-        System.out.println(currnet.data);
+        logger.info("data is {}",currnet.data);
     }
 
 

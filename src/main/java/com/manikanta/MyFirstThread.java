@@ -23,7 +23,7 @@ class MythreadMoney1 extends Thread{
         this.linkList1=linkList1;
     }
     public void run(){
-        for (int i =1; i<5000000; i++) {
+        for (int i =1; i<500; i++) {
             linkList1.append(i);
         }
 
